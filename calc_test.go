@@ -39,8 +39,8 @@ func (suite *SubtractTestSuite) TestSubtract() {
 		{12, 4, 8},
 		{50, 50, 0},
 		{30, 45, -15},
-		{-20, -22, -44},
-		{-23, 50, 27},
+		{-20, -22, -2},
+		{-23, 50, 73},
 	}
 	for _, v := range testData {
 		assert.Equal(suite.T(), Subtract(v.x, v.y), v.expected, "%d subtract %d will give %d", v.x, v.y, v.expected)
