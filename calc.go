@@ -14,3 +14,13 @@ func Subtract(minuend, subtrahend int) int {
 func Multiply(multiplicant, multiplier int) int {
 	return multiplicant * multiplier
 } 
+
+// Divide function to get quotient of 2 integers
+func Divide(dividend, divisor int) float64 {
+	defer func() {
+		if err := recover(); err != nil {
+			return
+		}
+	}()
+	return float64(dividend) / float64(divisor)
+}
