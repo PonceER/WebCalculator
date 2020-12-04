@@ -13,6 +13,12 @@ type testStructure struct {
 	expected int
 }
 
+type testDivide struct {
+	x        int
+	y        int
+	expected float64
+}
+
 type AddTestSuite struct {
 	suite.Suite
 }
@@ -22,6 +28,10 @@ type SubtractTestSuite struct {
 }
 
 type MultiplyTestSuite struct {
+	suite.Suite
+}
+
+type DivideTestSuite struct {
 	suite.Suite
 }
 
@@ -59,6 +69,18 @@ func (suite *MultiplyTestSuite) TestMultiply() {
 	}
 	for _, v := range testData {
 		assert.Equal(suite.T(), Multiply(v.x, v.y), v.expected, "%d multiply by %d will give %d", v.x, v.y, v.expected)
+	}
+}
+
+func (suite *DivideTestSuite) TestDivide() {
+	testData := []testStructure{
+		{5, -2, -5 / 2},
+		{6, 8, 6 / 8},
+		{-30, -10, 3.0},
+		{100, 25, 4.0},
+	}
+	for _, v := range testData {
+		assert.Equal(suite.T(), Divide(v.x, v.y), v.expected, "%d divided by %d will give %d", v.x, v.y, v.expected)
 	}
 }
 func TestSuites(t *testing.T) {
