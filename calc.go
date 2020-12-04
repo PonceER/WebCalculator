@@ -9,3 +9,8 @@ func Add(addend1, addend2 int) int {
 func Subtract(minuend, subtrahend int) int {
 	return minuend - subtrahend
 }
+
+// Multiply function to get product of 2 integers
+func Multiply(multiplicant, multiplier int) int {
+	return multiplicant * multiplier
+}
