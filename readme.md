@@ -1,4 +1,4 @@
-Activity #3: Simple Web Calculator Test Cases
+Activity #3: Simple Web/(Normal) Calculator Test Cases
 
 Consider a simple web calculator server.
 1. The simple calculator shall consist of the following simple functions
