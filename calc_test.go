@@ -73,9 +73,9 @@ func (suite *MultiplyTestSuite) TestMultiply() {
 }
 
 func (suite *DivideTestSuite) TestDivide() {
-	testData := []testStructure{
-		{5, -2, -5 / 2},
-		{6, 8, 6 / 8},
+	testData := []testDivide{
+		{5, -2, -2.5},
+		{6, 8, 0.75},
 		{-30, -10, 3.0},
 		{100, 25, 4.0},
 	}
