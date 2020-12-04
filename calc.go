@@ -13,4 +13,4 @@ func Subtract(minuend, subtrahend int) int {
 // Multiply function to get product of 2 integers
 func Multiply(multiplicant, multiplier int) int {
 	return multiplicant * multiplier
-}
+} 
