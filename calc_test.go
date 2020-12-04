@@ -22,7 +22,7 @@ type SubtractTestSuite struct {
 }
 
 type MultiplyTestSuite struct {
-	suite.suite
+	suite.Suite
 }
 
 func (suite *AddTestSuite) TestAdd() {
