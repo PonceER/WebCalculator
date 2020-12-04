@@ -78,6 +78,7 @@ func (suite *DivideTestSuite) TestDivide() {
 		{6, 8, 0.75},
 		{-30, -10, 3.0},
 		{100, 25, 4.0},
+		{100, 0, math.Inf(1)},
 	}
 	for _, v := range testData {
 		assert.Equal(suite.T(), Divide(v.x, v.y), v.expected, "%d divided by %d will give %d", v.x, v.y, v.expected)
