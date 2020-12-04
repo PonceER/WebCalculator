@@ -87,4 +87,5 @@ func TestSuites(t *testing.T) {
 	suite.Run(t, new(AddTestSuite))
 	suite.Run(t, new(SubtractTestSuite))
 	suite.Run(t, new(MultiplyTestSuite))
+	suite.Run(t, new(DivideTestSuite))
 }
